@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Header */
+.App h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add Task */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List */
+.task-list {
+  margin-bottom: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item span {
+  flex: 1;
+  color: #333;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task-item button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.task-item button:hover {
+  color: #0056b3;
+}
+
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filter select:focus {
+  outline: none;
+  border-color: #007bff;
+}
